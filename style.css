@@ -154,3 +154,38 @@ button:hover {
     transform: translateY(0);
   }
 }
+
+/* VERSION MOBILE */
+
+@media (max-width: 768px) {
+
+  .letter {
+    width: 95%;
+    padding: 25px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .letter h1 {
+    font-size: 40px;
+  }
+
+  #memoryPhoto {
+    max-width: 95%;
+    max-height: 55vh;
+  }
+
+  #slideTitle {
+    font-size: 28px;
+    padding: 0 15px;
+  }
+
+  .envelope {
+    font-size: 90px;
+  }
+
+  .click-text {
+    font-size: 22px;
+  }
+
+}

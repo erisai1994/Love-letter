@@ -44,14 +44,14 @@ function startMemoryAnimation() {
       memoryPhoto.src = slides[currentPhotoIndex].photo;
       slideTitle.textContent = slides[currentPhotoIndex].title;
 
-      memoryPhoto.style.animation = "none";
-      slideTitle.style.animation = "none";
+      memoryPhoto.classList.remove("fade-in");
+      slideTitle.classList.remove("fade-in");
 
       void memoryPhoto.offsetWidth;
       void slideTitle.offsetWidth;
 
-      memoryPhoto.style.animation = "fadeIn 1s ease";
-      slideTitle.style.animation = "fadeIn 1s ease";
+      memoryPhoto.classList.add("fade-in");
+      slideTitle.classList.add("fade-in");
     } else {
       clearInterval(slideshow);
 

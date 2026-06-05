@@ -63,13 +63,11 @@ button:hover {
 
 /* ÉCRAN 2 */
 
-#screen-memories h1 {
+#slideTitle {
   margin-bottom: 30px;
-  font-size: 32px;
-}
-
-#memoryPhoto {
-  animation: fadeIn 1s ease;
+  font-size: 34px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
 }
 
 #memoryPhoto {
@@ -80,36 +78,41 @@ button:hover {
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.35);
 }
 
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
 /* ÉCRAN 3 */
 
 .letter {
   max-width: 650px;
-  background: linear-gradient(
-    135deg,
-    #f7edd1,
-    #eed9a7
-  );
-  color: #4a2f20;
-  padding: 35px;
+  padding: 42px;
   border-radius: 18px;
-  border: 2px solid #d6b46a;
-  line-height: 1.7;
-  font-size: 20px;
-  box-shadow:
-    0 0 30px rgba(0, 0, 0, 0.3),
-    inset 0 0 20px rgba(255, 255, 255, 0.25);
-  animation: letterAppear 1s ease;
-}
 
-#slideTitle {
-  margin-bottom: 30px;
-  font-size: 34px;
-  letter-spacing: 1px;
-  text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.45), transparent 35%),
+    linear-gradient(135deg, #f3dfaa, #d9b56f);
+
+  color: #3b2415;
+  border: 3px solid #9b6b2f;
+
+  line-height: 1.8;
+  font-size: 21px;
+  font-family: Garamond, Georgia, serif;
+
+  box-shadow:
+    0 0 35px rgba(0, 0, 0, 0.4),
+    inset 0 0 35px rgba(92, 55, 20, 0.22);
+
+  animation: letterAppear 1s ease;
 }
 
 .letter h1 {
   margin-top: 0;
+  margin-bottom: 20px;
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+  font-size: 54px;
+  color: #7a3f22;
 }
 
 /* ANIMATIONS */
